@@ -1,0 +1,19 @@
+{
+  "name": "b3-dev-tu-cotier-alexandre",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexandreCotier/b3-dev-tu-cotier-alexandre.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexandreCotier/b3-dev-tu-cotier-alexandre/issues"
+  },
+  "homepage": "https://github.com/AlexandreCotier/b3-dev-tu-cotier-alexandre#readme"
+}
