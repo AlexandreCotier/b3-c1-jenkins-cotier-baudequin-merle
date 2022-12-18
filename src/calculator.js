@@ -28,6 +28,10 @@ class Calculator {
     static numberToPowerTwo(number){
         return Math.pow(number, 2);
     }
+
+    static squareRoot(number){
+        return Math.sqrt(number);
+    }
 }
 
 module.exports = {
