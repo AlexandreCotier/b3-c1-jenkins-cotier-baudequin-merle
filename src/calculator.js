@@ -20,6 +20,14 @@ class Calculator {
         if(numberTwo == 0){ return 0};
         return (numberOne / numberTwo) * 100;
     }
+
+    static numberToPower(numberOne, numberTwo){
+        return Math.pow(numberOne, numberTwo);
+    }
+
+    static numberToPowerTwo(number){
+        return Math.pow(number, 2);
+    }
 }
 
 module.exports = {

@@ -51,10 +51,10 @@ describe('Testing the Calculator Functions', function() {
         done();
     });
 
-    it('11. lettre', function(done) {
-        expect(Calculator.division(10,'a')).to.equal('');
-        done();
-    }); // j'ai voulu faire un test pour quand ya pas un chiffre
+    //it('11. lettre', function(done) {
+    //    expect(Calculator.division(10,'a')).to.equal('');
+    //    done();
+    //});
 
     it('12. ToPower', function(done){
         expect(Calculator.numberToPower(2,4)).to.equal(16);
