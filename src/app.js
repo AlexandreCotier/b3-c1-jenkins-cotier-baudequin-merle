@@ -1,4 +1,5 @@
 const readline = require('readline');
+const {Calculator} = require("./calculator");
 
 const rl = readline.createInterface({
     input: process.stdin,
