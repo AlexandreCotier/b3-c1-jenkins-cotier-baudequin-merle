@@ -5,11 +5,56 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
+function askForContinue(){
+    rl.question('Do you want to make another operation ? (y for yes) ?', (answer) => {
+        if((answer === 'y') || (answer === 'o')){
+            main();
+        } else {
+            rl.close();
+        }
+    })
+
+}
+
 function main(){
     rl.question('Enter the first number: ', (num1) => {
         rl.question('Enter the second number: ', (num2) => {
             rl.question('Enter the operator (+, -, *, /, ^, ^2, %): ', (operator) => {
+                let result;
+                num1 = Number(num1);
+                num2 = Number(num2);
 
+                switch(operator){
+                    case '+':
+                        result = Calculator.sum(num1,num2);
+                        break;
+                    case '-':
+                        result = Calculator.substract(num1,num2);
+                        break;
+                    case '*':
+                        result = Calculator.multiply(num1,num2);
+                        break;
+                    case '/':
+                        result = Calculator.division(num1,num2);
+                        break;
+                    case '%':
+                        result = Calculator.percentil(num1,num2);
+                        break;
+                    default:
+                        console.log('Invalid operator');
+                        break;
+                }
+
+                if(isNaN(result)){
+                    console.log("Quelque chose s'est mal passé ...");
+                }else{
+
+                        sortie = num1 + ' ' + operator + ' ' + num2 + ' = ' + result;
+
+                    console.log(sortie);
+                }
+
+                askForContinue();
             })
         })
     })
