@@ -9,6 +9,7 @@ describe('Testing the Calculator Functions', function() {
 
     it('2. Multiply', function(done) {
         expect(Calculator.multiply(2,4)).to.equal(8);
+        expect(Calculator.multiply(2.2,4)).to.equal(8.8);
         done();
     });
 
@@ -65,4 +66,11 @@ describe('Testing the Calculator Functions', function() {
         expect(Calculator.numberToPowerTwo(18)).to.equal(324);
         done();
     })
+
+    it('14. Square root tests', function(done){
+        expect(Calculator.squareRoot(9)).to.equal(3);
+        expect(Calculator.squareRoot(81)).to.equal(9);
+        done();
+    })
+
 });

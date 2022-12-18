@@ -14,3 +14,5 @@ Pour lancer les tests unitaires, entrez la commande
 ```
 npm run test
 ```
+## Plan de tests
+
