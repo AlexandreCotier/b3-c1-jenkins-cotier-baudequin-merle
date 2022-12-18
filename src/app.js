@@ -49,7 +49,7 @@ function main(){
                     console.log("Quelque chose s'est mal passé ...");
                 }else{
 
-                        sortie = num1 + ' ' + operator + ' ' + num2 + ' = ' + result;
+                    sortie = num1 + ' ' + operator + ' ' + num2 + ' = ' + result;
 
                     console.log(sortie);
                 }
