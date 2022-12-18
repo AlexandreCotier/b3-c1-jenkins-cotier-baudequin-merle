@@ -20,7 +20,7 @@ function askForContinue(){
 function main(){
     rl.question('Enter the first number: ', (num1) => {
         rl.question('Enter the second number (let it empty if ^2): ', (num2) => {
-            rl.question('Enter the operator (+, -, *, /,^,^2,%): ', (operator) => {
+            rl.question('Enter the operator (+, -, *, /, ^, ^2, %, v): ', (operator) => {
 
                 let result;
                 let sortie;
@@ -45,10 +45,14 @@ function main(){
                         break;
                     case '^2':
                         result = Calculator.numberToPowerTwo(num1);
-                        sortie = num1 + ' ' + operator + ' = ' + result; // on a pas de num2 ici
+                        sortie = num1 + ' ' + operator + ' = ' + result;
                         break;
                     case '%':
-                        result = Calculator.percentil(num1,num2);// sortie est moche ici mais osef
+                        result = Calculator.percentil(num1,num2);
+                        break;
+                    case 'v':
+                        result = Calculator.squareRoot(num1);
+                        sortie = operator + num1 + ' = ' + result;
                         break;
                     default:
                         console.log('Invalid operator');
@@ -58,7 +62,7 @@ function main(){
                 if(isNaN(result)){
                     console.log("Something went wrong...");
                 }else{
-                    if(operator != '^2'){
+                    if(operator != '^2' && operator != 'v'){
                         sortie = num1 + ' ' + operator + ' ' + num2 + ' = ' + result;
                     }
                     console.log(sortie);
