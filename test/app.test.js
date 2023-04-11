@@ -3,7 +3,7 @@ const expect = require('chai').expect;
 
 describe('Testing the Calculator Functions', function() {
     it('1. Sum', function(done) {
-        expect(Calculator.sum(4,2)).to.equal(6);
+        expect(Calculator.sum(4,2)).to.equal(7);
         expect(Calculator.sum(4.1,2)).to.equal(6.1);
         done();
     });
